@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="playcabbage.chisholm.app.Cabbage"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <application
+        android:name="playcabbage.chisholm.app.settings.CabbageApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="playcabbage.chisholm.app.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="playcabbage.chisholm.app.activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="playcabbage.chisholm.app.activity.SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name="playcabbage.chisholm.app.activity.WhatIsActivity"
+            android:label="@string/title_activity_what_is" >
+        </activity>
+        <activity
+            android:name="playcabbage.chisholm.app.activity.PlayerSummary"
+            android:label="@string/title_activity_player_summary" >
+        </activity>
+        <activity
+            android:name="playcabbage.chisholm.app.activity.LeaderBoardActivity"
+            android:label="@string/title_activity_leader_board" >
+        </activity>
+        <activity
+            android:name="playcabbage.chisholm.app.activity.ItemListActivity"
+            android:label="@string/title_activity_collected_items" >
+        </activity>
+        <activity
+            android:name="playcabbage.chisholm.app.activity.ItemSummaryActivity"
+            android:label="@string/title_activity_item_summary" >
+        </activity>
+        <activity
+            android:name="playcabbage.chisholm.app.activity.DisplayCollectibleGrid"
+            android:label="@string/title_activity_display_collectible_grid" >
+        </activity>
+        <activity
+            android:name="playcabbage.chisholm.app.activity.CheckinActivity"
+            android:label="@string/title_activity_checkin"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <data android:mimeType="application/vnd.rach.nfcdemo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="playcabbage.chisholm.app.activity.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name="playcabbage.chisholm.app.Cabbage.DisplayLeaderBoardListActivity"
+            android:label="@string/title_activity_display_leader_board_list" >
+        </activity>
+    </application>
+
+</manifest>

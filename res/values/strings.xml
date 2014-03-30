@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cabbage</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_what_is">WhatIsActivity</string>
+    <string name="create_account">Create Account</string>
+    <string name="title_activity_player_summary">PlayerSummary</string>
+    <string name="title_activity_leader_board">LeaderBoard</string>
+    <string name="title_activity_collected_items">CollectedItems</string>
+    <string name="title_activity_item_summary">ItemSummary</string>
+    <string name="player_username">Username</string>
+    <string name="player_rank"></string>
+    <string name="player_score">No Score</string>
+    <string name="LeaderBoard">View Leader Board</string>
+    <string name="ItemList">View Collectible List</string>
+    <string name="ItemName">Item Name</string>
+    <string name="PlayerSummary">View Player Summary</string>
+
+    <color name="greenLight">#daead3</color>
+    <color name="greenMid2">#7C9E23</color>
+    <color name="greenMid">#e4F9AD</color>
+    <color name="greenDark">#3D7019</color>
+    <color name="greyLight">#DCDCDC</color>
+    <color name="greyDark">#838383</color>
+
+    <string name="title_activity_display_collectible_grid">DisplayCollectibleGrid</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_checkin">CheckinActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_display_leader_board_list">DisplayLeaderBoardListActivity</string>
+
+</resources>

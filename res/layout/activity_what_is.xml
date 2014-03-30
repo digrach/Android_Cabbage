@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/greenLight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".WhatIsActivity" >
+
+    <TextView
+        android:id="@+id/usernameTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="What is Cabbage?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameTest"
+        android:layout_below="@+id/usernameTest"
+        android:textSize="20sp"
+        android:text="For students of Chisholm Institute, Dandenong, Victoria, Australia. Cabbage players explore the Chisholm Institute Dandenong campus collecting faculty points, faculty skills and faculty items. Cabbage is a game of exploration and collection produced by The Diploma of Digital and Interactive Games students, 2013, (ICA50211). Cabbage utilises Near Field Communication (NFC) technology to showcase game design and programming skills of students, and also showcase cutting edge industry leading education."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Cabbage introduces players to the Dandenong campus of Chisholm Institute and all the education faculties and courses offered. So sign up, jump in, and get collecting. Can you top the charts?"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
